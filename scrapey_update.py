@@ -10,13 +10,13 @@ import os
 # In[9]:
 
 
-os.system("cd ~/Desktop/Personal/scrapey_airbnb_2 ")
+os.system("cd ~/Desktop/Personal/scrapey_airbnb_2 | git add . ")
 
 
 # In[10]:
 
 
-os.system("git add .")
+#os.system("git add .")
 
 
 # In[11]:
