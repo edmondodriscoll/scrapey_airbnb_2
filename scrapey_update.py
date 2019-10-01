@@ -1,38 +1,16 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[5]:
+# In[13]:
 
 
-import os
+import datetime
 
 
-# In[9]:
+# In[16]:
 
 
-os.system("cd ~/Desktop/Personal/scrapey_airbnb_2 | git add . ")
-
-
-# In[10]:
-
-
-#os.system("git add .")
-
-
-# In[11]:
-
-
-os.system('git commit -m"update"' )
-
-
-# In[12]:
-
-
-os.system("git push")
-
-
-# In[ ]:
-
-
-
+import datetime
+datetime_object = datetime.datetime.now()
+print(datetime_object)
 
