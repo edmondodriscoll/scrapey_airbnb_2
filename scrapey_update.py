@@ -1,25 +1,31 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[1]:
+# In[5]:
 
 
 import os
 
 
-# In[2]:
+# In[9]:
+
+
+os.system("cd ~/Desktop/Personal/scrapey_airbnb_2 ")
+
+
+# In[10]:
 
 
 os.system("git add .")
 
 
-# In[3]:
+# In[11]:
 
 
 os.system('git commit -m"update"' )
 
 
-# In[4]:
+# In[12]:
 
 
 os.system("git push")
