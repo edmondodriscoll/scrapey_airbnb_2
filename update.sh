@@ -1,2 +1,1 @@
-
-python3 scrapey_update.py
+git add . | git commit -m"update" | git push
