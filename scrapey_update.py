@@ -1,33 +1,18 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[13]:
+# In[46]:
 
 
-import datetime
+import pandas as pd
 
 
-# In[16]:
+# In[63]:
 
 
 import datetime
 datetime_object = datetime.datetime.now()
 print(datetime_object)
-
-
-# In[18]:
-
-
-import os 
-
-
-# In[22]:
-
-
-
-os.system('touch today1' )
-
-
 
 
 # In[44]:
@@ -38,19 +23,6 @@ list =[]
 for x in range(1):
     y= random.randint(1,3)
     list.append(y)
-    print(random.randint(1,3))
-
-
-# In[45]:
-
-
-list
-
-
-# In[46]:
-
-
-import pandas as pd
 
 
 # In[47]:
@@ -59,16 +31,23 @@ import pandas as pd
 df = pd.DataFrame(list, columns = ["test"])
 
 
-# In[48]:
+# In[86]:
 
 
-df
+from datetime import datetime, timedelta
+n= datetime.strftime(datetime.now() + timedelta(random.randint(0,2)), '%Y-%m-%d')
 
 
-# In[49]:
+# In[87]:
 
 
-df.to_csv("test.csv")
+df.to_csv("test{}".format(n))
+
+
+# In[ ]:
+
+
+
 
 
 # In[ ]:
