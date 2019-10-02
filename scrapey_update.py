@@ -1,21 +1,21 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[46]:
+# In[89]:
 
 
 import pandas as pd
 
 
-# In[63]:
+# In[90]:
 
 
 import datetime
 datetime_object = datetime.datetime.now()
-print(datetime_object)
+# print(datetime_object)
 
 
-# In[44]:
+# In[91]:
 
 
 import random
@@ -25,29 +25,35 @@ for x in range(1):
     list.append(y)
 
 
-# In[47]:
+# In[92]:
 
 
 df = pd.DataFrame(list, columns = ["test"])
 
 
-# In[86]:
+# In[93]:
 
 
 from datetime import datetime, timedelta
 n= datetime.strftime(datetime.now() + timedelta(random.randint(0,2)), '%Y-%m-%d')
 
 
-# In[87]:
+# In[94]:
 
 
-df.to_csv("test{}".format(n))
+n
+
+
+# In[95]:
+
+
+df.to_csv("update{}".format(n))
 
 
 # In[ ]:
 
 
-
+print("ran to the end")
 
 
 # In[ ]:
